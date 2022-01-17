@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BankManagemnet_CodeFirst</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/LayoutStyleSheet.css" rel="stylesheet"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+</head>
+<body>
+    <header>
+        <div class="text-center">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <div class="imgleft">
+                        <img src="~/Images/SBIlogo.png" style="height:70px;width:70px;float:left;" />
+
+                    </div>
+                    <div class="imgright">
+                        <img src="~/Images/SBIlogo.png" style="height:70px;width:70px;float:right;" />
+
+                    </div>
+                    <i class="fas fa-user-tie"></i>
+                </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">@*Services<span class="sr-only">(current)</span>*@</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" style="color:white;">mobile Banking <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:white;">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:white;">Corporate Website</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">SBMOPS <img src="~/Images/newAnimationLogo.gif" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">SB Collect</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">Electrol Bond</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">mCash</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">Apply For SBI/Current Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">NPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">Bill Pay</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">SBI Loans</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class=" body_section">
+        <img src="~/Images/AnimationSec1.gif"  class="img-fluid"/><br></br><br></br>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="cont1">
+
+                    <img src="~/Images/cont1.PNG" class="img-fluid"/>
+                </div>
+
+            </div>
+            
+                <div class="col-sm-6">
+                    <div class="cont2">
+                        <img src="~/Images/cont2.PNG" class="img-fluid"/>
+
+                    </div>
+                 </div>
+         </div>
+
+         
+
+            <div class="col-sm-6" style="background-color:white; border:2px solid white">
+                <!--<img src="~/Images/blueUsername.jpg" style="height:80px;width:80px; align-content:center;" />
+    <div class="textbody1">
+        <p id="para1">Personal Banking</p>
+        <-->
+                @*<a href="https://retail.onlinesbi.com/retail/login.htm" class="btn btn-primary" id="btnlogin">Login >></a>
+        </div>
+            <a href="https://www.sbiyono.sbi/index.html" class="btn btn-block" id="btnyono">
+            <img src="~/Images/yonobtn.png" />
+            </a>*@
+
+
+                <!--<div class="panel-footer row">
+        <div class="col-xs-6 text-left">
+            <div class="previous">
+                <a href="https://retail.onlinesbi.com/retail/login.htm">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <img src="~/Images/loginbtn.PNG" />
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-6 text-right">
+            <div class="next">
+                <a href="https://www.sbiyono.sbi/index.html" class="btn btn-default btn-sm">
+                    <span class="glyphicon glyphicon-chevron-right"></span> <img src="~/Images/yonobtn.png" />
+                </a>
+            </div>
+        </div>
+    </div>-->
+                <!-- end panel-footer -->
+                <!--</div>
+
+            <p id=" content1">SBI's internet banking portal provides personal banking services that gives you complete control over all your banking demands online.</p>
+        </div>
+        <div class="col-sm-6" style="background-color:white;">
+            <i class='fas fa-lock' style='font-size:48px;color:green'></i>
+            <p>Lock & Unlock User</p>
+            <i>
+                Have you tried our new simplified and intuitive business banking platform? Log in to yonobusiness.sbi to avail business banking services.
+
+            </i>
+        </div>
+    </div>-->
+            </div>
+
+   
+    <div class="wpanel_marquee" id="message">
+        <marquee>
+            SBI never asks for your Card/PIN/OTP/CVV details on phone, message or email. Please do not click on links received on your email or mobile asking your Bank/Card details. &nbsp;&nbsp;|&nbsp;&nbsp; Attention Retail/Corporate INB Users, transaction OTP will be made mandatory for all merchant related transactions, hence please have your mobile number registered if the same has not been done until now.  &nbsp;&nbsp;|&nbsp;&nbsp;  <span style="color: #0070c0;">For enhanced secure banking experience, SBI Internet Banking website is migrating to its own generic Top Level Domain “.sbi”.</span> &nbsp; <span style="color: #ff0000;">The new SBI Internet Banking URL for Retail users will be “retail.onlinesbi.sbi”. </span>  &nbsp;&nbsp;|&nbsp;&nbsp;  Dear Customer, if you have donated for PM CARES through SBI Internet Banking, you can download the Receipt from PMCares portal of govt. using the reference number available with you.  &nbsp;&nbsp;|&nbsp;&nbsp;  Have you tried our new simplified and intuitive business banking platform? Log in to <a href="https://yonobusiness.sbi/"><u>yonobusiness.sbi</u></a> to avail business banking services.</p>
+        </marquee>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="footer1">
+        <div class="col-xs-12 col-md-3 col-sm-4">
+            <p>© State Bank of India (APM Id:Serv_Tran_564)</p>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+
+
+
+        </body>
+</html>

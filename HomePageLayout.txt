@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="~/css/LayoutStyleSheet.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/HomePageSheet.css" rel="stylesheet" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <div class="text-center">
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <div class="imgleft">
+                        <img src="~/Images/SBIlogo.png" style="height:70px;width:70px;float:left;" />
+
+                    </div>
+                    <div class="imgright">
+                        <img src="~/Images/SBIlogo.png" style="height:70px;width:70px;float:right;" />
+
+                    </div>
+                    <i class="fas fa-user-tie"></i>
+                </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">@*Services<span class="sr-only">(current)</span>*@</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" style="color:white;">mobile Banking <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:white;">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:white;">Corporate Website</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">SBMOPS <img src="~/Images/newAnimationLogo.gif" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">SB Collect</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">Electrol Bond</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">Videos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">mCash</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">Apply For SBI/Current Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">NPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">Bill Pay</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" style="color:white;">SBI Loans</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign Up</button>
+
+        <!-- Modal -->
+        <div class="modal fade modal-md" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 id="registerHeading" style="text-align:center;">Register New User</h1>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="formGroup">
+
+                            @*<form action="/action_page.php">*@
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+
+                                        <label for="FirstName">First Name:</label>
+                                        <input type="text" class="form-control" id="First Name" placeholder="Enter First Name" name="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+
+
+                                        <label for="LastName">Last Name:</label>
+                                        <input type="text" class="form-control" id="LastName" placeholder="Enter Last Name" name="LastName">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+
+                                        <label for="Email">Email:</label>
+                                        <input type="email" class="form-control" id="Email" placeholder="Enter Email" name="Email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Password">Password:</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Set Password" name="password">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Mobile No.">Mobile No:</label>
+                                        <input type="text" class="form-control" id="Mobile No." placeholder="Enter Mobile No." name="Mobile No.">
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="Date Of Birth">Date Of Birth</label>
+                                        <input type="date" class="form-control" id="DateOfBirth" placeholder="Date Of Birth" name="Date of Birth" />
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="City">City</label>
+                                        <input type="text" class="form-control" id="City" placeholder="City" name="City">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="State">State</label>
+                                        <input type="text" class="form-control" id="State" placeholder="Select State" name="State" />
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="PinCode">PinCode:</label>
+                                        <input type="text" class="form-control" id="PinCode." placeholder="Enter PinCode." name="PinCode">
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                </label>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModalLogin">
+                Open modal
+            </button>
+
+            <!-- The Modal -->
+            <div class="modal fade" id="myModalLogin">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Sign In</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            @*<form>*@
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label for="Uername">Uername </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="email" name="Email" placeholder="Username & Email" /></br></br>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label for="Password">Password</label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="password" name="password" placeholder="password" /></br></br>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-primary">Login</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+
+
+
+                    @*</form>*@
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="~/Images/bankBg.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/Images/bg1.PNG" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/Images/AnimationSec1.gif" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <h1><strong>Products</strong> to meet your life goals</h1>
+
+    </div>
+    <div class="container-fluid">
+        <div class=row">
+            <div class="col-sm-3">
+                <div class="column1">
+                    <i class='fas fa-piggy-bank' style='font-size:48px;color:gray;height:40px;width:40px;'></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
